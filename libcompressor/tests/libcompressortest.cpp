@@ -37,7 +37,6 @@ TEST(compressor_test, zlib_result_is_correct) {
 
   ASSERT_TRUE(res_zlib.data != NULL && res_zlib.size == size);
   for (int i = 0; i < size; i++) {
-    std::printf("%0.2hhx", res_zlib.data[i]);
     ASSERT_TRUE(static_cast<unsigned char>(res_zlib.data[i]) == exp_ans[i]);
   }
 }
