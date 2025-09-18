@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
   }
 
   for (int i = 0; i < output.size; i++) {
-    std::printf("%0.2hhx", output.data[i]);
+    std::printf("%.2hhx", output.data[i]);
   }
 
   std::printf("\n");
